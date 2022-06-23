@@ -24,6 +24,15 @@ const counterFunction = () => {
   };
 };
 
+export const rest = (increment) => {
+  if (isNaN(increment)) {
+    return;
+  }
+  if (increment >= 2) {
+    return increment - 2
+  }
+}
+
 
 export const stateControl = storeState();
 export const incrementer = counterFunction();
